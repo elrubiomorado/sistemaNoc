@@ -8,10 +8,10 @@
             'current' => request()->routeIs('dashboard'),
             ],
             [
-            'name' => 'Tools',
-            'icon' => 'wrench-screwdriver',
-            'url' => route('admin.tools'),
-            'current' => request()->routeIs('admin.tools'),
+            'name' => 'Categories',
+            'icon' => 'funnel',
+            'url' => route('admin.categories.index'),
+            'current' => request()->routeIs('admin.categories'),
             ]
         ],
     ];
@@ -59,7 +59,7 @@
 
             <flux:navlist.item icon="book-open-text" href="https://linkedin.com/in/edgar-avila-gonzalez-b698b261/"
                 target="_blank">
-                {{ __('LinkedIn Creador') }}
+                {{ __('LinkedIn Creator') }}
             </flux:navlist.item>
         </flux:navlist>
 
