@@ -6,7 +6,12 @@
             'icon' => 'Home',
             'url' => route('dashboard'),
             'current' => request()->routeIs('dashboard'),
-            ],
+            ],[
+            'name' => 'Tickets',
+            'icon' => 'funnel',
+            'url' => route('admin.tickets.index'),
+            'current' => request()->routeIs('admin.tickets'),
+            ],  
             [
             'name' => 'Categories',
             'icon' => 'funnel',
